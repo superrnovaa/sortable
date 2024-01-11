@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Sortable</title>
+  </head>
+  <body>
+    <h1>Superheroes List</h1>
+    <div class="search">
+        <input type="text" placeholder="search..." />
+        <select name="search" class="search-box">
+          <option value=1>Name</option>
+          <option value=2>Full Name</option>
+          <option value=10>Race</option>
+          <option value=9>Gender</option>
+          <option value=13>Place of Birth</option>
+          <option value=14>Alignment</option>
+        </select> 
+      </div>
+  
+      <div class="rows">
+        <label for="rows">Rows nomber:</label>
+        <select name="rows">
+          <option value=10>10</option>
+          <option value=20 selected>20</option>
+          <option value=50>50</option>
+          <option value=100>100</option>
+          <option value=563>All</option>
+        </select> 
+      </div>
+      <br>
+
+    <table aria-label="Table with sortable data">
+        <thead>
+            <tr>
+              <th>Icon</th>
+              <th>Name</th>
+              <th>Full Name</th>
+              <th>Intelligence</th>
+              <th>Strength</th>
+              <th>Speed</th>
+              <th>Durability</th>
+              <th>Power</th>
+              <th>Combat</th>
+              <th>Gender</th>
+              <th>Race</th>
+              <th>Height</th>
+              <th>Weight</th>
+              <th>Place of birth</th>
+              <th>Alignement</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+    </table>
+    <div id="pages"></div>
+    <script src="./sortable.js"></script>
+  </body>
+</html>
+
